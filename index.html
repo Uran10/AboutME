@@ -3,7 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AboutMe</title>
+    <meta name="description" content="Pagina personale di Roberto M.">
+    <meta name="keywords" content="Roberto, Minoia, programmatore, curriculum, landing, chi sono">
+    <meta name="author" content="Roberto Minoia">
+    <title>Roberto M.</title>
     <link rel="stylesheet" href="css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <!--Click tracker-->
@@ -16,7 +19,7 @@
       var now = new Date().getTime();
       var distance =  now - birthday;
       var years = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
-      document.getElementById("countDown").innerHTML = years;
+        document.getElementById("countDown").innerHTML = years.toString();
     };
   </script>
   <style>

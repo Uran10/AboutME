@@ -8,59 +8,68 @@
     <meta name="author" content="Roberto Minoia">
     <title>Roberto M.</title>
     <link rel="stylesheet" href="css/bulma.min.css">
+    <style>
+        body {
+            /*background-color: #0078d7;*/
+            /*background-image: linear-gradient(to right bottom, #4287f5, #3174f8, #335ef8, #4643f4, #5d12eb);*/
+            background-image: linear-gradient(to right bottom, #3d86f6, #009ffd, #00b4fe, #3cc8fc, #6ddaf8);
+        }
+
+        .title {
+            font-family: 'Baloo Tamma', cursive;
+        }
+
+        .box {
+            box-shadow: 10px 10px 5px #009ffd;
+        }
+
+        .imgProfilo {
+            box-shadow: 10px 10px 5px #009ffd;
+            border-radius: 5px;
+            cursor: url(image/rock.cur), auto !important;
+        }
+
+        .space {
+            margin-left: 2rem;
+        }
+
+        .colorecodeBase {
+            color: #3400FF;
+        }
+
+        .colorecodeClass {
+            color: #7Ad9FF;
+        }
+
+        .colorecodeString {
+            color: #c11543;
+        }
+
+        a:link, a:visited, a:hover, a:active {
+            color: #c11543;
+            background-color: none;
+        }
+
+        a:hover {
+            background-color: #13e246;
+            color: #000000;
+        }
+    </style>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <!--Click tracker-->
     <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101303014);</script>
     <script async src="//static.getclicky.com/js"></script>
+    <script>
+        function valorizzaAge() {
+            var birthday = new Date("Sep 18, 1980 01:00:00").getTime();
+            var now = new Date().getTime();
+            var distance = now - birthday;
+            var years = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
+            document.getElementById("countDown").innerHTML = years.toString();
+        };
+    </script>
 </head>
-  <style>
-    body {
-      /*background-color: #0078d7;*/
-      /*background-image: linear-gradient(to right bottom, #4287f5, #3174f8, #335ef8, #4643f4, #5d12eb);*/
-      background-image: linear-gradient(to right bottom, #3d86f6, #009ffd, #00b4fe, #3cc8fc, #6ddaf8);
-    }
-    .title {
-      font-family: 'Baloo Tamma', cursive;
-    }
-    .box {
-      box-shadow: 10px 10px 5px #009ffd;
-    }
-    .imgProfilo {
-      box-shadow: 10px 10px 5px #009ffd;
-      border-radius: 5px;
-      cursor: url(image/rock.cur), auto !important;
-    } 
-    .space {
-      margin-left: 2rem;
-    }
-    .colorecodeBase {
-      color: #3400FF;
-    }
-    .colorecodeClass {
-      color: #7Ad9FF;
-    }
-    .colorecodeString {
-      color: #c11543;
-    }
-    a:link, a:visited, a:hover, a:active  {
-      color: #c11543;
-      background-color: none;
-    }
-    a:hover {
-      background-color: #13e246;
-      color: #000000;
-    }
-  </style>
   <body>
-      <script>
-          function valorizzaAge() {
-              var birthday = new Date("Sep 18, 1980 01:00:00").getTime();
-              var now = new Date().getTime();
-              var distance = now - birthday;
-              var years = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
-              document.getElementById("countDown").innerHTML = years.toString();
-          };
-      </script>
       <section class="hero is-fullheight">
           <div class="hero-body">
               <div class="container">

@@ -60,11 +60,12 @@
         }
     </style>
     <script src="script/ValorizzaAge.js"></script>
-    <script src="script/SlideShow.js" defer></script>
+    <script defer src="script/SlideShow.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <!--Click tracker-->
     <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101303014);</script>
     <script async src="//static.getclicky.com/js"></script>
+    <script src="script/konami.js"></script>
 </head>
 <body>
     <section class="hero is-fullheight">
@@ -135,5 +136,43 @@
             </div>
         </div>
     </section>
+    <div id="modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+                <article class="media">
+                    <div class="media-left">
+                        <figure class="image is-64x64">
+                            <img src="image/star.png" loading="lazy" alt="Image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong>Livello bonus!</strong> <small>(Scherzo)</small>
+                                <br>
+                                Sinceramente non so ancora cosa fare con questa sezione.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <script>
+    var homunculus = new Konami(function () {
+            event.preventDefault();
+            var modal = document.querySelector('.modal');
+            var html = document.querySelector('html');
+            modal.classList.add('is-active');
+            html.classList.add('is-clipped');
+
+            modal.querySelector('.modal-background').addEventListener('click', function (e) {
+                e.preventDefault();
+                modal.classList.remove('is-active');
+                html.classList.remove('is-clipped');
+            });
+        });</script>
 </body>
 </html>
